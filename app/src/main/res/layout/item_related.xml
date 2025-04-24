@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_half"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    android:layout_marginBottom="@dimen/margin_half">
+
+    <ImageView
+        android:id="@+id/imgRelated"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder"
+        android:layout_marginEnd="@dimen/margin_half"
+        android:background="@drawable/bg_image_shadow"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvRelatedTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Related Title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_body"/>
+
+        <TextView
+            android:id="@+id/tvRelatedSnippet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Short snippet for this related story goes here."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_body_small"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+    </LinearLayout>
+</LinearLayout>
+

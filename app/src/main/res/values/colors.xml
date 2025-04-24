@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alice_blue">#F0F8FF</color>    <!-- app background -->
+    <color name="primary_blue">#0E3386</color>  <!-- buttons, highlights -->
+    <color name="sky_blue">#87CEEB</color>      <!-- special sections later -->
+    <color name="white">#FFFFFF</color>         <!-- text on blue -->
+    <color name="black">#000000</color>         <!-- default text -->
+</resources>

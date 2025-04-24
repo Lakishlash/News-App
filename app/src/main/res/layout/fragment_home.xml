@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alice_blue"
+    android:padding="@dimen/margin_standard">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--  App Title (left aligned below toolbar) -->
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NewsApp"
+            android:textSize="24sp"
+            android:textColor="@color/primary_blue"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:layout_marginBottom="@dimen/margin_half" />
+
+        <!-- Greeting -->
+        <TextView
+            android:id="@+id/tvGreeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text=""
+            tools:text="@string/greeting_format"
+            android:textSize="@dimen/text_size_label"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/margin_standard"/>
+
+        <!-- Top Stories Label -->
+        <TextView
+            android:id="@+id/tvTopStoriesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/label_top_stories"
+            android:textSize="@dimen/text_size_label"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <!-- Carousel + arrows -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_image_size"
+            android:layout_marginTop="@dimen/margin_half">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTopStories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/arrow_button_size"
+                android:paddingEnd="@dimen/arrow_button_size"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+            <ImageButton
+                android:id="@+id/btnLeft"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start|center_vertical"
+                android:background="@drawable/bg_circle_transparent"
+                android:scaleType="centerInside"
+                android:padding="8dp"
+                android:elevation="8dp"
+                android:src="@drawable/ic_chevron_left" />
+
+            <ImageButton
+                android:id="@+id/btnRight"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/bg_circle_transparent"
+                android:scaleType="centerInside"
+                android:padding="8dp"
+                android:elevation="8dp"
+                android:src="@drawable/ic_chevron_right" />
+        </FrameLayout>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_standard" />
+
+        <!-- News Label -->
+        <TextView
+            android:id="@+id/tvNewsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/label_news"
+            android:textSize="@dimen/text_size_label"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <!-- News Grid -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_half"
+            android:paddingStart="@dimen/margin_standard"
+            android:paddingEnd="@dimen/margin_standard"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"/>
+    </LinearLayout>
+</ScrollView>

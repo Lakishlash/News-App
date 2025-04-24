@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+
+    <!-- Used by HomeFragment -->
+    <string name="greeting_format">Hello %1$s, Have a nice day!</string>
+    <string name="label_top_stories">Top Stories</string>
+    <string name="label_news">News</string>
+</resources>

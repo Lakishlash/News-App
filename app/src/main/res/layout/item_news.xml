@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/margin_half"
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_half">
+
+    <ImageView
+        android:id="@+id/imgNews"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_image_size"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_image_shadow"
+        android:contentDescription="@string/label_news"/>
+
+    <TextView
+        android:id="@+id/tvNewsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News title here"
+        android:textSize="@dimen/text_size_title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginTop="@dimen/margin_half"/>
+
+    <TextView
+        android:id="@+id/tvNewsSnippet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News snippet goes here..."
+        android:textSize="@dimen/text_size_body"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+    <dimen name="item_image_size">140dp</dimen>
+    <dimen name="text_size_label">18sp</dimen>
+    <dimen name="text_size_title">16sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <!-- width of each arrow button -->
+    <dimen name="arrow_button_size">32dp</dimen>
+    <dimen name="text_size_body_small">12sp</dimen>
+</resources>
