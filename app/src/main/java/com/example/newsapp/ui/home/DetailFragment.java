@@ -54,7 +54,7 @@ public class DetailFragment extends Fragment {
             imgHeader.setImageResource(item.getImageRes());
             tvTitle.setText(item.getTitle());
 
-            // 📝 Long content for realism
+            //  Long content for realism
             String fullText = item.getSnippet() + "\n\n" +
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " +
                     "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n" +

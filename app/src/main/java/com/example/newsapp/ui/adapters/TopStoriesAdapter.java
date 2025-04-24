@@ -24,7 +24,7 @@ public class TopStoriesAdapter
     @Override
     public TopStoryViewHolder onCreateViewHolder(
             @NonNull ViewGroup parent, int viewType) {
-        // Inflate your item layout
+        // Inflate item layout
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_top_story, parent, false);
 
